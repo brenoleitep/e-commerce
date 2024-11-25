@@ -17,7 +17,7 @@ function App() {
       const numericPrice = typeof product_price === 'string' ? parseFloat(product_price) : product_price;
 
       if (isNaN(numericPrice)) {
-        return <p>Preço inválido</p>
+        return <p>Invalid price</p>
       }
       
       const formatPrice = (price: number) => {
@@ -36,7 +36,6 @@ function App() {
 
       )
     }
-  
 
   return (
     <>
